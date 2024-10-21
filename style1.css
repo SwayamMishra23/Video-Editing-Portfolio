@@ -1,0 +1,233 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav{
+    width: 100vw;
+    height: 22vh;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(245, 245, 245, 0.811); /* Slightly transparent background */
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 30vw;
+}
+
+#left-nav{
+    display: flex;
+    width: 20%;
+    height: 80%;
+    justify-content: center;
+    align-items: end;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    gap: 0.5vw;
+}
+
+#left-nav h2{
+    color: black;
+    z-index: 999999;
+    font-size: 2.6vw;
+    margin-bottom: 20px;
+}
+
+#left-nav h4{
+    margin-bottom: 25px;
+    color: #909090;
+    z-index: 999999;
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+#right-nav{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    align-items: end;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    gap: 6vw;
+}
+
+.link-porfolio{
+    color: #000000;
+    font-size: 1.2vw;
+    margin-bottom: 32.5px;
+    text-decoration: none;
+}
+
+.link-contact{
+    color: #000000;
+    font-size: 1.2vw;
+    margin-bottom: 32.5px;
+    text-decoration: none;
+}
+
+.link-home{
+    color: #000000;
+    font-size: 1.2vw;
+    margin-bottom: 32.5px;
+    text-decoration: none;
+}
+
+#right-nav h3{
+    color: #000000;
+    font-size: 1.2vw;
+    margin-bottom: 32.5px;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:start;
+}
+
+#page1 h1{
+    font-size: 7vw;
+    color: black;
+    font-family: "Italiana", sans-serif;
+    font-weight: 200;
+    margin-top: 12vh;
+}
+
+#page1 video{
+    margin-top: 5vh;
+    height: auto;
+    width: auto;
+    max-width: 80vw;
+    max-height: 65vh;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.315);
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:start;
+}
+
+#page2 h1{
+    font-size: 7vw;
+    color: black;
+    font-family: "Italiana", sans-serif;
+    font-weight: 200;
+    margin-top: 12vh;
+}
+
+#p2-p1{
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    width: 58.7vw;
+    height: 32.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p2-p2{
+    background-color: whitesmoke;
+    width: 58.7vw;
+    height: 32.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p2-video{
+    width: 45%;
+    height: 90%;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:start;
+}
+
+#page3 h1{
+    font-size: 7vw;
+    color: black;
+    font-family: "Italiana", sans-serif;
+    font-weight: 200;
+    margin-top: 12vh;
+}
+
+#p3-p1{
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    width: 58.7vw;
+    height: 32.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p3-p2{
+    background-color: whitesmoke;
+    width: 58.7vw;
+    height: 32.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p3-video{
+    width: 45%;
+    height: 90%;
+    background-color: burlywood;
+    border-radius: 20px;
+}
