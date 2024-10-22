@@ -35,6 +35,20 @@ function locomotiveAnimation() {
 }
 locomotiveAnimation();
 
+const text = "Hey people!";
+let index = 0;
+const speed = 150; // Speed of typing in milliseconds
+
+function typeWriterEffect() {
+    if (index < text.length) {
+        document.getElementById("typewriter-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriterEffect, speed);
+    }
+}
+
+window.onload = typeWriterEffect;
+
 document.addEventListener("mousemove", function (e) {
     const cursorText = document.getElementById("cursor-text");
 
@@ -51,3 +65,8 @@ document.querySelector("#moving-div").addEventListener("mouseenter", function ()
 document.querySelector("#moving-div").addEventListener("mouseleave", function () {
     document.getElementById("cursor-text").style.display = "none";
 });
+
+window.onload = function() {
+    // Hide the loading overlay
+    document.getElementById("loading-overlay").style.display = "none";
+};

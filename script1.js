@@ -34,3 +34,8 @@ function locomotiveAnimation() {
     ScrollTrigger.refresh();
 }
 locomotiveAnimation();
+
+window.onload = function() {
+    // Hide the loading overlay
+    document.getElementById("loading-overlay").style.display = "none";
+};

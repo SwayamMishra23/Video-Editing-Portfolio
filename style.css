@@ -23,6 +23,34 @@ body {
     background-color: whitesmoke;
 }
 
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+}
+
+.loader {
+    border: 8px solid #000000; /* Light grey */
+    border-top: 8px solid #a9a9a9; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 header{
     display: flex;
     justify-content: start;
@@ -101,6 +129,7 @@ nav{
     text-decoration: none;
 }
 
+
 #right-nav h3{
     color: #000000;
     font-size: 1.2vw;
@@ -146,6 +175,17 @@ nav{
     font-size: 1.5vw;
     transform: scaleY(20px);
     font-weight: 300;
+}
+
+.typewriter-container {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#typewriter-text {
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .scroll-indicator {
@@ -255,11 +295,17 @@ nav{
     align-items: center;
     margin-right: 5vw;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #circles img{
     width: 30px;
     height: 30px;
+}
+
+#circles:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #page2{
