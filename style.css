@@ -177,17 +177,6 @@ nav{
     font-weight: 300;
 }
 
-.typewriter-container {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#typewriter-text {
-    padding-right: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 .scroll-indicator {
     position: relative;
     width: 30px;

@@ -35,20 +35,6 @@ function locomotiveAnimation() {
 }
 locomotiveAnimation();
 
-const text = "Hey people!";
-let index = 0;
-const speed = 150; // Speed of typing in milliseconds
-
-function typeWriterEffect() {
-    if (index < text.length) {
-        document.getElementById("typewriter-text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriterEffect, speed);
-    }
-}
-
-window.onload = typeWriterEffect;
-
 document.addEventListener("mousemove", function (e) {
     const cursorText = document.getElementById("cursor-text");
 
