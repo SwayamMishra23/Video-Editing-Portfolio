@@ -515,9 +515,16 @@ nav{
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #circles1 img{
     width: 30px;
     height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#circles1:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
